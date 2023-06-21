@@ -1,0 +1,65 @@
+.ubox{
+    position: relative;
+    width: 100%;
+    height: 4.3rem;
+    left: 0px;
+   
+    
+    background: #F00000;
+   
+}
+
+
+.nav-row{
+    margin-right: 19rem;
+    margin-left: 18rem;
+    display: flex;
+    flex-direction: row;
+    gap: 26%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.input-class{  
+    width: 15rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.in{
+    border: white;
+    /* border-right: 5px rgb(213, 115, 10); */
+    border-radius:2px 0px 0px 2px ;
+    padding-right: 8rem;
+}
+
+.search-icon{
+    background-color: white;
+    border-radius: 0px  2px 2px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+    
+}
+
+.nav-row a{
+    text-decoration: none;
+    
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    
+
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+
+}
+
+

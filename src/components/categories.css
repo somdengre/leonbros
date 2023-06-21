@@ -1,0 +1,33 @@
+.categories{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+.ctext{
+    color: #141A55;
+    text-align: center;
+    letter-spacing: 0.05em;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 49.0769px;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.t{
+    background-color: #141A55;
+    color: white;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+}
