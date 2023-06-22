@@ -1,0 +1,31 @@
+.card {
+  width: 33%;
+  border: none;
+}
+.card-text {
+  background-color: #141a55;
+  color: white;
+  font-size: 1.2rem !important;
+}
+.card-img-top {
+  width: 100%;
+}
+.card-body {
+  position: relative;
+  bottom: 4.8rem;
+  margin-left: -1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 109.5% !important;
+}
+
+.card-text {
+  width: 100% !important;
+  height: 3.5rem !important;
+  border-bottom-left-radius: 1.15rem;
+  border-bottom-right-radius: 1.15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

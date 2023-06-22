@@ -1,0 +1,12 @@
+.searchbar{
+    width: 70%;
+    background: #F00000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 6rem;
+    border-radius: 0.6rem;
+    margin-top: 5rem;
+    transform: translateY(50%)
+}

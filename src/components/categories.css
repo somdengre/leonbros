@@ -20,7 +20,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    gap: 2rem;
 }
 .t{
     background-color: #141A55;

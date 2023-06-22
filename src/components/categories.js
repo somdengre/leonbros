@@ -9,6 +9,7 @@ import brake from '../Assets/brake.svg'
 import coming from '../Assets/coming.svg'
 import ignition from '../Assets/ignition.svg'
 import drive from '../Assets/drive.svg'
+import Card from './Card';
 
 
 
@@ -20,49 +21,19 @@ function Categories() {
     <div className='categories'>
         <div className='ctext'>CATEGORIES</div>
         <div className='items'>
-            <div className='item'>
-                <div><img src={hub}/> </div>
-                <div className='t'>HUB BEARING</div>
-            </div>
-            <div className='item'>
-                <div><img src={engine}/></div>
-                <div className='t'>ENGINE & TRANS. MOUNTS</div>
-            </div>
-            <div className='item'>
-                <div> <img src={water}/></div>
-                <div className='t'>WATER PUMPS</div>
-            </div>
-            
+            <Card image={hub} description="HUB BEARING"/>
+            <Card image={engine} description="ENGINE &TRANS. MOUNTS"/>
+            <Card image={water} description="WATER PUMPS"/>
         </div>
         <div className='items'>
-            <div className='item'>
-                <div><img src={suspenssion}/> </div>
-                <div className='t'>SUSPENSSION PARTS</div>
-            </div>
-            <div className='item'>
-                <div><img src={brake}/></div>
-                <div className='t'>BRAKE PADS & ROTORS</div>
-            </div>
-            <div className='item'>
-                <div><img src={engineparts}/> </div>
-                <div className='t'>ENGINE PARTS & GASKETS</div>
-            </div>
-            
+            <Card image={suspenssion} description="SUSPENSSION PARTS"/>
+            <Card image={brake} description="BRAKE PADS & ROTORS"/>
+            <Card image={engineparts} description="ENGINE PARTS & GASKETS"/>  
         </div>
         <div className='items'>
-            <div className='item'>
-                <div><img src={ignition}/></div>
-                <div className='t'>IGNITION & FUEL MANAGEMENT</div>
-            </div>
-            <div className='item'>
-                <div><img src={drive}/></div>
-                <div className='t'>DRIVE SHAFT & AXEL</div>
-            </div>
-            <div className='item'>
-                <div> <img src={coming}/></div>
-                <div className='t'>COMING SOON..</div>
-            </div>
-            
+            <Card image={ignition} description="IGNITION & FUEL MANAGEMENT"/>
+            <Card image={drive} description="DRIVE SAFETY & AXEL"/>
+            <Card image={coming} description="COMING SOON.."/>
         </div>
         
     </div>
