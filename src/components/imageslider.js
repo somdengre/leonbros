@@ -31,7 +31,7 @@ function Imageslider() {
   return (
     <div className="imageslider">
       <div className="about">
-        <div className="text">
+        <div className="itext">
           WELCOME TO LEON AND BROTHERS INC.
           <br />
           AUTO PARTS FOR OE & AFTERMARKET SOLUTION.
