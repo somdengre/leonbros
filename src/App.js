@@ -19,8 +19,6 @@ function App() {
       <div><Searchbar/></div>
       <div><Footer/></div>
       {/* <div><ImageSlider/></div>   */}
-      
-      
     </div>
   );
 }
