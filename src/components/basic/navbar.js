@@ -1,7 +1,8 @@
 import React from "react";
 import "./navbar.css";
-import homeImage from "../Assets/home.svg";
-import search from "../Assets/Vector.svg";
+import homeImage from "../../Assets/home.svg";
+import search from "../../Assets/Vector.svg";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -19,7 +20,7 @@ function Navbar() {
         <div>
           <a href="/news">NEWS</a>
         </div>
-        <div className="input-class">
+        <div className="input-class navbar-input">
           <input
             className="in"
             type="text"

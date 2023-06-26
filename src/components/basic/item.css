@@ -1,0 +1,51 @@
+.it{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.iname{
+    color: #000;
+    font-size: 16.042px;
+    letter-spacing: 0.802px;
+    text-transform: capitalize;
+}
+
+.ides{
+    color: #9E9E9E;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    text-transform: capitalize;
+}
+.irat{
+    display: flex;
+
+}
+
+.istar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 1.458px;
+    background: #141A55;
+}
+
+.istars{
+    color: #FFF;
+    font-size: 13.125px;
+    letter-spacing: 0.656px;
+}
+
+.inum{
+    color: #9E9E9E;
+    font-size: 13.125px;
+    letter-spacing: 0.656px;
+}
+
+.iprice{
+    color: #F00000;
+    font-size: 13.125px;
+    font-weight: 600;
+    letter-spacing: 0.656px;
+}

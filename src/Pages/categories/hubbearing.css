@@ -1,0 +1,35 @@
+.ccon{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ct{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 30rem;
+    font-size: 15px;
+}
+.chead{
+    color: #F00;
+    text-align: center;
+    font-size: 49.077px;
+    font-weight: 600;
+    letter-spacing: 9.815px;
+}
+
+.line{
+    height: 0.01rem;
+    width: 80%;
+    background: #000;margin: auto;
+}
+
+.citems{
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

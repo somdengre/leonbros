@@ -1,25 +1,37 @@
 import React from 'react';
 import './App.css';
-import Navbar from './components/navbar';
-import ImageSlider from './components/imageslider';
-import Header from './components/header';
-import Categories from './components/categories';
-import About from './components/about';
-import Searchbar from './components/searchbar';
-import Footer from './components/footer';
+
+
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Home from './Pages/Home/home';
+import Hubbearing from './Pages/categories/hubbearing';
+import Engine from './Pages/categories/engine';
+import Water from './Pages/categories/water';
+import Suspenssion from './Pages/categories/suspenssion';
+import Brakepads from './Pages/categories/brakepads';
+import Engineparts from './Pages/categories/engineparts';
+import Ignition from './Pages/categories/ignition';
+import Drive from './Pages/categories/drive';
 
 function App() {
   return (
-    <div className="App">
-      <div><Header/></div>
-      <div><Navbar/></div>  
-      <div><ImageSlider/></div>
-      <div><Categories/></div>
-      <div><About/></div>
-      <div><Searchbar/></div>
-      <div><Footer/></div>
-      {/* <div><ImageSlider/></div>   */}
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/hubbearing" element={<Hubbearing/>}/>
+        <Route path="/engine" element={<Engine/>}/>
+        <Route path="/water" element={<Water/>}/>
+        <Route path="/suspenssion" element={<Suspenssion/>}/>
+        <Route path="/brakepads" element={<Brakepads/>}/>
+        <Route path="/engineparts" element={<Engineparts/>}/>
+        <Route path="/ignition" element={<Ignition/>}/>
+        <Route path="/drive" element={<Drive/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

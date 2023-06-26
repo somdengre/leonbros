@@ -5,8 +5,12 @@
     align-items: center;
     justify-content: center;
     margin: auto;
-    height: 6rem;
+    height: 10rem;
     border-radius: 0.6rem;
     margin-top: 5rem;
     transform: translateY(50%)
+}
+
+.footerSeachBar{
+    width: auto;
 }
