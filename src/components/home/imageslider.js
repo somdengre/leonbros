@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import slide1 from "../../Assets/slide1.png";
 import slide2 from "../../Assets/slide2.png";
 import slide3 from "../../Assets/slide3.png";
-import slide4 from "../../Assets/slide4.png";
+import slide4 from "../../Assets/slide4.svg";
 
 import water from "../../Assets/water.svg";
 
