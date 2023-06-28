@@ -20,6 +20,7 @@
 }
 .irat{
     display: flex;
+    gap: 0.5rem;
 
 }
 
@@ -29,6 +30,7 @@
     justify-content: space-around;
     border-radius: 1.458px;
     background: #141A55;
+    width: 2.5rem;
 }
 
 .istars{

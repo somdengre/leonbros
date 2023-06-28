@@ -22,3 +22,24 @@
 
 }
 
+.fline{
+    height: 0.06rem;
+    background: #D9D9D9;
+}
+
+.foot{
+    background: #151414;
+    height: 32rem;
+}
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.con{
+    padding-bottom: 1rem;
+}
+

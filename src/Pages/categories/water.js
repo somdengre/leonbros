@@ -30,7 +30,7 @@ function Water() {
               </div>
             </div>
             <div className='cim'>
-            <img className="image" src={cat3} alt="engine & trans. mounts" />
+            <img className="cimage" src={cat3} alt="engine & trans. mounts" />
             </div>
         </div>
         <div className='line'></div>

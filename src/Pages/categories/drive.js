@@ -38,7 +38,7 @@ function Drive() {
               </div>
             </div>
             <div className='cim'>
-            <img className="image" src={cat1} alt="hub bearing" />
+            <img className="cimage" src={cat1} alt="hub bearing" />
             </div>
         </div>
         <div className='line'></div>

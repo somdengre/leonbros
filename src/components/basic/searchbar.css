@@ -14,3 +14,7 @@
 .footerSeachBar{
     width: auto;
 }
+
+.search-icon{
+    cursor: pointer;
+}

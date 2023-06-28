@@ -4,8 +4,8 @@ import './header.css';
 function Header() {
   return (
     <div className='header'>
-        <div className='c'>+91-9876543210</div>
-        <div className='c'>support@leon&bros.inc</div>
+        <div className='cl'>+91-9876543210</div>
+        <div className='cr'>support@leon&bros.inc</div>
     </div>
   )
 }

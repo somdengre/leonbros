@@ -32,7 +32,7 @@ function Engine() {
               </div>
             </div>
             <div className='cim'>
-            <img className="image" src={cat2} alt="engine & trans. mounts" />
+            <img className="cimage" src={cat2} alt="engine & trans. mounts" />
             </div>
         </div>
         <div className='line'></div>
