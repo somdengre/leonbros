@@ -51,3 +51,160 @@
     font-weight: 600;
     letter-spacing: 0.656px;
 }
+
+
+/* products */
+
+.pcontain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 0.5rem;
+    
+
+}
+
+.pimage{
+    width: 22rem;
+    aspect-ratio: 1/1;
+    border: 0.656px solid #000;
+    margin-left: 1rem;
+}
+
+.pinfo{
+    
+    width: 80rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-right: 2rem;
+    padding-right: 2rem;
+
+}
+
+.phead{
+    color: #F00000;
+    font-size: 19.673px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.984px;
+
+
+}
+
+.pcat{
+    color: #9E9E9E;
+    font-size: 13.115px;
+  
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.656px;
+}
+
+.prat{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.prnum{
+    color: #9E9E9E;
+    font-size: 13.125px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.656px;
+}
+
+.pcont{
+    color: #000;
+    font-size: 13.115px;
+   
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.656px;
+}
+
+.pfeat{
+    color: #000;
+    font-size: 13.115px;
+   
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.656px;
+
+}
+
+.pnums{
+    color: #141A55;
+    font-size: 13.115px;
+
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.656px;
+}
+
+.pabt{
+    color: #000;
+    font-size: 13.115px;
+  
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.656px;
+}
+
+.pprice{
+    border-radius: 2.698px;
+    background: #F00000;
+    color: #FFF;
+    font-size: 24.281px;
+    width: 6rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 1.214px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.pcross{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pguide{
+    background: #141A55;
+    color: #FFF;
+    font-size: 13.115px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.656px;
+    width: 24.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.4rem;
+    margin-left: 1rem;
+}
+
+.pres{
+    margin-left: 1rem;
+    color: #F00000;
+    font-size: 13.115px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.656px;
+    margin-top: 1rem;
+}
