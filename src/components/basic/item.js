@@ -14,9 +14,9 @@ function MyVerticallyCenteredModal(props) {
       centered
     >
       <Modal.Body>
-        <div className='pcross'>
+        <div data-dismiss="modal" className='pcross' onClick={() => props.setShow(false)}>
           <img className="picross" src={cross} alt="close" />
-          </div>
+        </div>
         <div className='pcontain'>
             <div className='pimg'>
                 <img className="pimage" src={item1} alt="hub bearing" />
@@ -57,6 +57,50 @@ function MyVerticallyCenteredModal(props) {
         <div className='pres'>
           Results may be incomplete due to size of result set
         </div>
+
+        <div className='ptable'>
+          <div className='light'>
+            <div className='pl'>CADILLAC</div>
+            <div className='pm'>ESCALADE</div>
+            <div className='pr'>1999-2000</div>
+          </div>
+          <div className='dark'>
+            <div className='pl'>CADILLAC</div>
+            <div className='pm'>ESCALADE</div>
+            <div className='pr'>1999-2000</div>
+          </div>
+          <div className='dark'>
+            <div className='pl'>CADILLAC</div>
+            <div className='pm'>ESCALADE</div>
+            <div className='pr'>1999-2000</div>
+          </div>
+          <div className='light'>
+            <div className='pl'>CADILLAC</div>
+            <div className='pm'>ESCALADE</div>
+            <div className='pr'>1999-2000</div>
+          </div>
+          <div className='dark'>
+            <div className='pl'>CADILLAC</div>
+            <div className='pm'>ESCALADE</div>
+            <div className='pr'>1999-2000</div>
+          </div>
+          <div className='light'>
+            <div className='pl'>CADILLAC</div>
+            <div className='pm'>ESCALADE</div>
+            <div className='pr'>1999-2000</div>
+          </div>
+          <div className='dark'>
+            <div className='pl'>CADILLAC</div>
+            <div className='pm'>ESCALADE</div>
+            <div className='pr'>1999-2000</div>
+          </div>
+          <div className='light'>
+            <div className='pl'>CADILLAC</div>
+            <div className='pm'>ESCALADE</div>
+            <div className='pr'>1999-2000</div>
+          </div>
+          
+        </div>
       </Modal.Body>
     </Modal>
   );
@@ -88,11 +132,14 @@ function Item(props) {
 
     </div>
       </div>
-
+      <div className='modalContainer'>
       <MyVerticallyCenteredModal
+        setShow={setModalShow}
         show={modalShow}
         onHide={() => setModalShow(false)}
       />
+      </div>
+      
     
     </div>
   )
