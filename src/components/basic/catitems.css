@@ -19,4 +19,6 @@
     align-items: center;
     justify-content: center;
     gap: 20vh;
+    width:90%;
+    margin:0 auto;
 }
