@@ -1,10 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Navbar from '../../components/basic/navbar'
 import Header from '../../components/basic/header'
 import Footer from '../../components/basic/footer'
 import Searchbar from '../../components/basic/searchbar'
 import cat7 from '../../Assets/categories/cat7.svg'
 import "./hubbearing.css"
+import Item from "../../components/basic/item";
 
 
 
@@ -12,6 +13,7 @@ import "./hubbearing.css"
 import Catitems from '../../components/basic/catitems'
 
 function Ignition() {
+  const [data,setData] = useState([]);
   return (
     <div>
       <div>
@@ -19,10 +21,28 @@ function Ignition() {
 
         </div>
         <div>
-        <Navbar/>
+        <Navbar data={data} setData={setData}/>
 
         </div>
-        <div className='ccon'>
+        {
+          data.length>0?(
+               <div className='citems'>
+                {data.map(item => (<Item
+                        image={item.image}
+                        // iname={item.moreInfo.replace(
+                        //   "More Information for ",
+                        //   ""
+                        // )}
+                        ides="Control Arm Bushing"
+                        irat="4.5"
+                        inum="(36,177)"
+                        price=" $3.20"
+                        data={item}
+                      />))}
+               </div>
+          ):(
+            <>
+            <div className='ccon'>
             <div className='ct'>
               <div className='chead'>IGNITION & FUEL MANAGEMENT</div>
               <div className='des'>AGQP. coils are engineered and design to be an aftermarket replacement and lower cost alternative to OEM coils. Products are designed to meet or exceed factory OEM specifications.
@@ -42,6 +62,13 @@ function Ignition() {
         <div className='line'></div>
 
         <div><Catitems/></div>
+            </>
+          )
+        }
+
+
+
+       
 
         <div><Searchbar/></div>
         <div><Footer/></div>

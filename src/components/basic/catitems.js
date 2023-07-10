@@ -9,11 +9,27 @@ function Catitems() {
   const [parts, setParts] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
+  const [currPage,setCurrPage] = useState(1);
   let currIndex = 0;
+
+  const loadMoreHandler = async() =>{
+    try{
+
+      let pageVal = currPage + 1;
+      const currPageData = await fetch(`https://leonbros-backend.vercel.app/v1/items/getItems?page=${pageVal}`)
+      .then((res) => res.json())
+      const newData = [...parts,...currPageData.data]
+      setParts(newData);
+      setLoading(false);
+      console.log(newData)
+    }catch(e){
+      console.log(e);
+    }
+  }
 
   useEffect(() => {
     try {
-      fetch("https://leonbros-backend.vercel.app/v1/items/getItems")
+      fetch("https://leonbros-backend.vercel.app/v1/items/getItems?page=1")
         .then((res) => res.json())
         .then((res) => {
           setParts(res.data);
@@ -35,9 +51,9 @@ function Catitems() {
         <span>Error Occured</span>
       ) : (
         <div>
-          {parts.map((_, index) => {
+          {/* {parts.map((_, index) => { */}
             {/* return <></> */}
-            if (index === currIndex) {
+            {/* if (index === currIndex) {
               let i = 0;
               const temp = [];
               while (i < 4 && currIndex < parts.length) {
@@ -53,9 +69,9 @@ function Catitems() {
                 }
                   currIndex++;
               }
-              return (
+              return ( */}
                 <div className="citems">
-                  {temp.map((part) => {
+                  {parts.map((part) => {
                     return (
                       <Item
                         image={part.image}
@@ -73,13 +89,13 @@ function Catitems() {
                   })}
                 </div>
               );
-            }
-            return <></>
-          })}
+            {/* } */}
+            {/* return <></>
+          })} */}
 
 
           <div>
-            <button className="catbtn">Load More</button>
+            <button className="catbtn" onClick={loadMoreHandler}>Load More</button>
           </div>
         </div>
       )}

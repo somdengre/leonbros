@@ -15,10 +15,16 @@
 }
 
 .citems{
-    display: flex;
+    display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creates 4 equal-width columns */
+  grid-gap: 10px;
     align-items: center;
     justify-content: center;
     gap: 20vh;
     width:90%;
     margin:0 auto;
 }
+
+.citems > * {
+    max-width: 100%; /* Adjust the maximum width as per your preference */
+  }
