@@ -14,6 +14,7 @@ function Catitems() {
 
   const loadMoreHandler = async() =>{
     try{
+      // https://leonbros-backend.vercel.app
 
       let pageVal = currPage + 1;
       const currPageData = await fetch(`https://leonbros-backend.vercel.app/v1/items/getItems?page=${pageVal}`)

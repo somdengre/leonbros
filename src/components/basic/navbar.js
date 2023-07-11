@@ -9,7 +9,7 @@ function Navbar( {data,setData}) {
   const [keyword,setKeyword] = useState("");
 
   const searchItems =async ()=>{
-      const currPageData = await fetch(`http://localhost:7000/v1/items/getItems?keyword=${keyword}`)
+      const currPageData = await fetch(`https://leonbros-backend.vercel.app/v1/items/getItems?keyword=${keyword}`)
       .then((res) => res.json())
       setData(currPageData.data);
       console.log(currPageData)
