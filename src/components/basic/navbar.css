@@ -85,3 +85,66 @@
 }
 
 
+.hamModal{
+    width: 100%;
+}
+.hamImage{
+    cursor: pointer;
+}
+.hamModal{
+    
+    position: absolute;
+    top: 43px;
+    right: 41px;
+    border-radius: 5px;
+
+}
+.hamImage{
+    display: none;
+}
+
+@media (max-width:600px){
+    .nav-row{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 2rem; 
+        margin-left: 1rem;
+        justify-content: space-between;
+    }
+    .hamImage{
+        display: flex;
+    }
+
+    .hx{
+        display: none;
+    }
+
+    .logo{
+        width: 4.5rem !important;
+    }
+
+    .ubox{
+        height: 3.7rem;
+    }
+
+    .navbar-input{
+    
+        margin-right: 0%;
+        
+    }
+
+    .input-class input{
+        text-align: center;
+        padding-left: 2%;
+        text-align: left;
+    }
+
+    .navbar-input{
+    
+        margin-right: 0%;
+        
+    }
+    
+    
+    
+}

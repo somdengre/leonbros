@@ -3,10 +3,18 @@ import "./navbar.css";
 import homeImage from "../../Assets/home.svg";
 import search from "../../Assets/Vector.svg";
 import { Link } from "react-router-dom";
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+import hamburger from '../../Assets/hamburger.png'
+import HamburgerModal from './hamBurgerList';
+
+
 
 function Navbar( {data,setData}) {
 
   const [keyword,setKeyword] = useState("");
+  const [show, setShow] = useState(false);
+  const [hamShow,setHamShow] = useState(false)
 
   const searchItems =async ()=>{
       const currPageData = await fetch(`https://leonbros-backend.vercel.app/v1/items/getItems?keyword=${keyword}`)
@@ -14,7 +22,9 @@ function Navbar( {data,setData}) {
       setData(currPageData.data);
       console.log(currPageData)
   }
-  
+  const handleHamModal = () => {
+    setHamShow(!hamShow)
+  }
 
   return (
     <nav className="ubox">
@@ -22,13 +32,14 @@ function Navbar( {data,setData}) {
         <div>
           <a href="/" className="logo">
             {" "}
-            <img src={homeImage} />{" "}
+            <img className="logo" src={homeImage} />{" "}
           </a>
         </div>
-        <div>
+
+        <div className="hx">
           <a href="/product">PRODUCT</a>
         </div>
-        <div>
+        <div className="hx">
           <a href="/news">NEWS</a>
         </div>
         <div className="input-class navbar-input">
@@ -46,6 +57,17 @@ function Navbar( {data,setData}) {
             <img onClick={searchItems} src={search} className="icon" />{" "}
           </div>
         </div>
+
+        <div onClick = {handleHamModal} className="hamImage">
+          <img style={{height:"10px"}} src={hamburger} />
+          <div className="hamModal">
+
+            {hamShow &&
+            <HamburgerModal />
+          }
+          </div>
+      </div>
+        
       </div>
     </nav>
   );

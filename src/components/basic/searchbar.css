@@ -18,3 +18,37 @@
 .search-icon{
     cursor: pointer;
 }
+
+@media only screen and (max-width: 600px){
+    .searchbar{
+        width: 70%;
+        padding: 0%;
+        background: #F00000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        height: 7rem;
+        border-radius: 0.5rem;
+        margin-top: 5rem;
+        transform: translateY(100%)
+    }
+
+    .in{
+        padding:0%;
+        margin:auto;
+        
+    }
+
+    .search-icon{
+        width: 2rem;
+        height: 1.5rem;
+        margin-top: 0.258rem;
+    }
+ 
+    .sicon{
+        height: 1rem;
+    }
+     
+    
+}

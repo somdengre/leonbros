@@ -1,0 +1,25 @@
+.hamWrapper{
+    width:10rem;
+    background-color: #d4d4d4;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.hamContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* width: 100%; */
+}
+.ham-items{
+    padding: 4px 0px;
+}
+.border-class{
+    border-bottom: 1px solid black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 2px 0; */
+}

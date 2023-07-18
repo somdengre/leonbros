@@ -41,3 +41,33 @@
     color: white;
 }
 
+@media only screen and (max-width: 600px) {
+
+    .about{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0.8rem;
+    
+       
+    }
+
+    
+
+    .para{
+       font-size: 15px;
+    }
+
+    .atext{
+        color: #141A55;
+        text-align: center;
+        letter-spacing: 0.04em;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 35px;
+        margin-top: 0.5rem;
+        
+    }
+}

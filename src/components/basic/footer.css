@@ -1,3 +1,7 @@
+.foot{
+    width: 100%;
+}
+
 .footer{
     width: 100%;
     display: flex;
@@ -6,6 +10,7 @@
     background: #151414;
     height: 25rem;
     padding: 4rem;
+    flex-wrap: wrap;
 }
 
 .head{
@@ -43,3 +48,49 @@
     padding-bottom: 1rem;
 }
 
+
+@media only screen and (max-width: 600px){
+    .footer{
+        margin-top: 4.6rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #151414;
+        height: 20rem ;
+        padding: 2rem;
+    }
+
+    .head{
+        color: #FFF;
+        font-size: 13px;
+        
+        font-weight: 700;
+    }
+    
+    .text{
+        color: #FFF;
+        font-size: 10px;
+        
+    
+    }
+
+    .fline{
+        height: 0.04rem;
+        background: #D9D9D9;
+    }
+    
+    .con{
+        padding-bottom: 0.05rem !important;
+    }
+
+    .fli{
+        background: #151414;
+        height: 3.5rem;
+    }
+
+    
+    
+
+    
+}

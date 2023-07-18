@@ -23,17 +23,14 @@ function Categories() {
             <Card linkedto={"hubbearing"}  image={hub}  description="HUB BEARING"/>
             <Card linkedto={"engine"}  image={engine} description="ENGINE &TRANS. MOUNTS"/>
             <Card linkedto={"water"} image={water} description="WATER PUMPS"/>
-        </div>
-        <div className='items'>
             <Card linkedto={"suspenssion"} image={suspenssion} description="SUSPENSSION PARTS"/>
             <Card linkedto={"brakepads"} image={brake} description="BRAKE PADS & ROTORS"/>
-            <Card linkedto={"engineparts"} image={engineparts} description="ENGINE PARTS & GASKETS"/>  
-        </div>
-        <div className='items'>
+            <Card linkedto={"engineparts"} image={engineparts} description="ENGINE PARTS & GASKETS"/>
             <Card linkedto={"ignition"} image={ignition} description="IGNITION & FUEL MANAGEMENT"/>
             <Card linkedto={"drive"} image={drive} description="DRIVE SAFETY & AXEL"/>
             <Card  image={coming} description="COMING SOON.."/>
         </div>
+        
         
     </div>
   )

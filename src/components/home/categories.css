@@ -1,3 +1,7 @@
+.body{
+    text-align: center;
+}
+
 .categories{
     display: flex;
     flex-direction: column;
@@ -15,12 +19,14 @@
     font-size: 49.0769px;
     margin-top: 4rem;
     margin-bottom: 6rem;
+    text-align: center;
 }
 .items{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 .t{
     background-color: #141A55;
@@ -30,4 +36,18 @@
 .item{
     display: flex;
     flex-direction: column;
+}
+
+@media only screen and (max-width: 600px){
+    .ctext{
+        color: #141A55;
+        text-align: center;
+        letter-spacing: 0.03em;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 35px;
+        margin-top: 2.2rem;
+        margin-bottom: 2.5rem;
+        text-align: center;
+    }
 }

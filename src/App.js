@@ -16,11 +16,14 @@ import Brakepads from './Pages/categories/brakepads';
 import Engineparts from './Pages/categories/engineparts';
 import Ignition from './Pages/categories/ignition';
 import Drive from './Pages/categories/drive';
+// import Pq from './test/Pq';
+
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+      
         <Route path="/" element={<Home/>} />
         <Route path="/hubbearing" element={<Hubbearing/>}/>
         <Route path="/engine" element={<Engine/>}/>
@@ -30,6 +33,7 @@ function App() {
         <Route path="/engineparts" element={<Engineparts/>}/>
         <Route path="/ignition" element={<Ignition/>}/>
         <Route path="/drive" element={<Drive/>}/>
+        {/* <Route path="/navbar" element={<Pq/>}/> */}
       </Routes>
     </BrowserRouter>
   );

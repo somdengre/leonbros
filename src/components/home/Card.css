@@ -1,5 +1,5 @@
 .card {
-  width: 33%;
+  width: 25%;
   border: none;
 }
 .card-text {
@@ -8,7 +8,7 @@
   font-size: 1.2rem !important;
 }
 .card-img-top {
-  width: 405px;
+  width: 100%;
   aspect-ratio: 1/1;
 }
 .card-body {
@@ -18,7 +18,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 109.5% !important;
+  width: 110.2% !important;
 }
 
 .card-text {
@@ -29,4 +29,80 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media only screen and (max-width: 600px){
+  .card-text{
+    width: 100%;
+    height: 1.8rem !important;
+    font-size: 0.6rem !important;
+    border-bottom-left-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+  }
+  .card-body {
+    bottom: 2.2rem;
+    width: 127.5% !important;
+}
+}
+
+@media only screen and (max-width: 540px){
+  .card-text{
+    width: 100%;
+    height: 1.8rem !important;
+    font-size: 0.6rem !important;
+    border-bottom-left-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem;
+  }
+  .card-body {
+    bottom: 2.1rem;
+    width: 130% !important;
+}
+
+}
+
+@media only screen and (max-width: 490px){
+
+
+  .card-body {
+    bottom: 2.2rem;
+    width: 133% !important;
+}
+.card-text{
+  font-size: 0.55rem !important;
+}
+}
+
+@media only screen and (max-width: 440px){
+  .card-text{
+    width: 100%;
+    height: 1.4rem !important;
+    font-size: 0.6rem !important;
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+  }
+  .card-body {
+    bottom: 1.8rem;
+    width: 138% !important;
+}
+.card-text{
+  font-size: 0.5rem !important;
+}
+}
+
+
+@media only screen and (max-width: 390px){
+  .card-text{
+    width: 100%;
+    height: 1.4rem !important;
+    font-size: 0.6rem !important;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+  }
+
+  .card-body {
+    bottom: 1.8rem;
+    width: 141% !important;
+}
+
+  
 }
