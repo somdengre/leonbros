@@ -1,7 +1,7 @@
 .hamWrapper{
     width:10rem;
     background-color: #d4d4d4;
-    color: white;
+    color: black;
     font-size: 1rem;
     border-radius: 5px;
 }
@@ -10,6 +10,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border: 1px solid black;
     /* width: 100%; */
 }
 .ham-items{
@@ -22,4 +23,16 @@
     align-items: center;
     justify-content: center;
     /* padding: 2px 0; */
+}
+
+.input-class input{
+    text-align: center;
+    padding-left: 2%;
+    text-align: left;
+}
+
+.navbar-input{
+
+    margin-right: 0%;
+    
 }
