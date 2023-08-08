@@ -28,7 +28,7 @@ function MyVerticallyCenteredModal(props) {
           </div>
           <div className="pinfo">
             <div className="phead">
-              {props.data.moreInfo.replace("More Information for ", "")}
+              {props.data.moreInfo && props.data.moreInfo.replace("More Information for ", "")}
             </div>
             <div className="pcat">Category: Control Arm Bushing</div>
             <div className="prat">
