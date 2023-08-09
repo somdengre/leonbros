@@ -7,6 +7,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import hamburger from "../../Assets/hamburger.png";
 import HamburgerModal from "./hamBurgerList";
+import { localURL } from "../../constants";
 
 function Navbar({ data, setData }) {
   const [keyword, setKeyword] = useState("");
@@ -15,10 +16,10 @@ function Navbar({ data, setData }) {
 
   const searchItems = async () => {
     const currPageData = await fetch(
-      `https://leonbros-backend.vercel.app/v1/items/getItems?keyword=${keyword}`
+      `${localURL}/items/getItems?keyword=${keyword}`
     ).then((res) => res.json());
     setData(currPageData.data);
-    console.log(currPageData);
+    console.log("sss",currPageData);
   };
   const handleHamModal = () => {
     setHamShow(!hamShow);

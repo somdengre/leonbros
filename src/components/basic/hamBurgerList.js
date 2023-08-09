@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import "./hamBurgerList.css";
 import search from "../../Assets/Vector.svg";
+import { localURL } from "../../constants";
 function HamBurgerList({ data, setData }) {
   const [keyword, setKeyword] = useState("");
   const [show, setShow] = useState(false);
   const [hamShow, setHamShow] = useState(false);
+  
 
   const searchItems = async () => {
     const currPageData = await fetch(
-      `https://leonbros-backend.vercel.app/v1/items/getItems?keyword=${keyword}`
+      `${localURL}/items/getItems?keyword=${keyword}`
     ).then((res) => res.json());
     setData(currPageData.data);
     console.log(currPageData);
