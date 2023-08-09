@@ -6,7 +6,7 @@ import cross from "../../Assets/cross.svg";
 import { Modal } from "react-bootstrap";
 
 function MyVerticallyCenteredModal(props) {
-  const features = props.data.features.split("\n");
+  const features = props.data.features && props.data.features.split("\n");
   return (
     <Modal
       {...props}

@@ -22,6 +22,7 @@ function Catitems() {
       const newData = [...parts,...currPageData.data]
       setParts(newData);
       setLoading(false);
+      console.log("current page", pageVal)
       setCurrPage(pageVal)
       console.log("bbbb",newData)
     }catch(e){
