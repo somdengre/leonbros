@@ -45,14 +45,14 @@ function MyVerticallyCenteredModal(props) {
             </div>
             <div className="pfeat">
               <div className="pfhead">{features ? features[0] : "No Feature found"}:</div>
-              <div className="pcontent">
+              {features && features.length > 0 && <div className="pcontent">
                 <ul>
                   {features.map((data, idx) => {
                     if (idx == 0 && data.length == 0) return <></>;
                     return <li>{data}</li>;
                   })}
                 </ul>
-              </div>
+              </div>}
             </div>
             <div className="pnums">{props.data.oem}</div>
             <div className="pabt">
