@@ -44,7 +44,7 @@ function MyVerticallyCenteredModal(props) {
               Kit; Includes Forward & Rearward Bushing
             </div>
             <div className="pfeat">
-              <div className="pfhead">{features[0]}:</div>
+              <div className="pfhead">{feature ? features[0] : "No Feature found"}:</div>
               <div className="pcontent">
                 <ul>
                   {features.map((data, idx) => {
