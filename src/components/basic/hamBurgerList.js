@@ -10,7 +10,7 @@ function HamBurgerList({ data, setData }) {
 
   const searchItems = async () => {
     const currPageData = await fetch(
-      `${localURL}/items/getItems?keyword=${keyword}`
+      `https://leonbros-backend.vercel.app/v1/items/getItems?keyword=${keyword}`
     ).then((res) => res.json());
     setData(currPageData.data);
     console.log(currPageData);

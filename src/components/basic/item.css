@@ -493,8 +493,12 @@
     }
     
     .pl, .pm{
+        display: flex;
+        align-items: center;
+        justify-content: left;
         margin-left: 0.5rem;
         font-size: 0.4rem;
+        
     }
     
     .pr{

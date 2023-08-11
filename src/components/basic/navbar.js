@@ -15,8 +15,10 @@ function Navbar({ data, setData }) {
   const [hamShow, setHamShow] = useState(false);
 
   const searchItems = async () => {
+    // console.log(`${localURL}/items/getItems?keyword=${keyword}`)
+    // `http://localhost:7000/v1/items/getItems?keyword=${keyword}`
     const currPageData = await fetch(
-      `${localURL}/items/getItems?keyword=${keyword}`
+      `https://leonbros-backend.vercel.app/v1/items/getItems?keyword=${keyword}`
     ).then((res) => res.json());
     setData(currPageData.data);
     console.log("sss",currPageData);

@@ -7,6 +7,9 @@ import { Modal } from "react-bootstrap";
 
 function MyVerticallyCenteredModal(props) {
   const features = props.data.features && props.data.features.split("\n");
+  console.log(props,"props data");
+  const feature = props.data.feature;
+  let count=0;
   return (
     <Modal
       {...props}
@@ -73,6 +76,34 @@ function MyVerticallyCenteredModal(props) {
         </div>
 
         <div className="ptable">
+        {feature && feature.map((item)=>{
+          if(count%2 ==0){
+          count++;
+          return( <div className="light">
+            <div className="pl">{item[0]}</div>
+            <div className="pm">{item[1]}</div>
+            <div className="pr">{item[2]}</div>
+          </div>)
+          }else{
+            count++;
+            return( <div className="dark">
+            <div className="pl">{item[0]}</div>
+            <div className="pm">{item[1]}</div>
+            <div className="pr">{item[2]}</div>
+          </div>)
+          }
+        })}
+         
+          {/* <div className="light">
+            <div className="pl">CADILLAC</div>
+            <div className="pm">ESCALADE</div>
+            <div className="pr">1999-2000</div>
+          </div>
+          <div className="dark">
+            <div className="pl">CADILLAC</div>
+            <div className="pm">ESCALADE</div>
+            <div className="pr">1999-2000</div>
+          </div>
           <div className="light">
             <div className="pl">CADILLAC</div>
             <div className="pm">ESCALADE</div>
@@ -83,36 +114,11 @@ function MyVerticallyCenteredModal(props) {
             <div className="pm">ESCALADE</div>
             <div className="pr">1999-2000</div>
           </div>
-          <div className="dark">
-            <div className="pl">CADILLAC</div>
-            <div className="pm">ESCALADE</div>
-            <div className="pr">1999-2000</div>
-          </div>
           <div className="light">
             <div className="pl">CADILLAC</div>
             <div className="pm">ESCALADE</div>
             <div className="pr">1999-2000</div>
-          </div>
-          <div className="dark">
-            <div className="pl">CADILLAC</div>
-            <div className="pm">ESCALADE</div>
-            <div className="pr">1999-2000</div>
-          </div>
-          <div className="light">
-            <div className="pl">CADILLAC</div>
-            <div className="pm">ESCALADE</div>
-            <div className="pr">1999-2000</div>
-          </div>
-          <div className="dark">
-            <div className="pl">CADILLAC</div>
-            <div className="pm">ESCALADE</div>
-            <div className="pr">1999-2000</div>
-          </div>
-          <div className="light">
-            <div className="pl">CADILLAC</div>
-            <div className="pm">ESCALADE</div>
-            <div className="pr">1999-2000</div>
-          </div>
+          </div> */}
         </div>
       </Modal.Body>
     </Modal>
@@ -121,11 +127,13 @@ function MyVerticallyCenteredModal(props) {
 
 function Item(props) {
   const [modalShow, setModalShow] = useState(false);
+
   return (
     <div className="item-container">
       <div onClick={() => setModalShow(true)}>
         <div className="it">
           <div className="ii">
+          {console.log(props.image)}
             <img className="iimage" src={props.image} alt="hub bearing" />
           </div>
           <div className="iname">{props.iname}</div>
@@ -147,7 +155,7 @@ function Item(props) {
           setShow={setModalShow}
           show={modalShow}
           onHide={() => setModalShow(false)}
-          data={props.data}
+          data={props.data} 
         />
       </div>
     </div>

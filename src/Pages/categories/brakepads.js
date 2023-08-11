@@ -56,7 +56,7 @@ function Brakepads() {
         </div>
         <div className='line'></div>
 
-        <div><Catitems/></div>
+        <div><Catitems /></div>
             </>
           )
         }
