@@ -10,10 +10,12 @@ import Item from "../../components/basic/item";
 
 
 
+
 import Catitems from '../../components/basic/catitems'
 
 function Hubbearing() {
-
+  
+  const hub_url = "https://leonbros-backend.vercel.app/v1/items/getItems"
   const [data,setData] = useState([]);
   console.log(data);
   return (
@@ -64,7 +66,7 @@ function Hubbearing() {
         </div>
         <div className='line'></div>
 
-        <div><Catitems/></div> </>
+        <div><Catitems url = {hub_url}/></div> </>
           )
         }
         

@@ -5,19 +5,20 @@ import item2 from "../../Assets/hubbearing_items/item2.svg";
 import item3 from "../../Assets/hubbearing_items/item3.svg";
 import item4 from "../../Assets/hubbearing_items/item4.svg";
 import "./catitems.css";
-function Catitems() {
+function Catitems(props) {
   const [parts, setParts] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
   const [currPage,setCurrPage] = useState(1);
   let currIndex = 0;
-
+  const url = props.url;
+  
   const loadMoreHandler = async() =>{
     try{
       // https://leonbros-backend.vercel.app
 
       let pageVal = currPage + 1;
-      const currPageData = await fetch(`https://leonbros-backend.vercel.app/v1/items/getItems?page=${pageVal}`)
+      const currPageData = await fetch(`${url}/?page=${pageVal}`)
       .then((res) => res.json())
       const newData = [...parts,...currPageData.data]
       setParts(newData);
@@ -32,7 +33,7 @@ function Catitems() {
 
   useEffect(() => {
     try {
-      fetch("https://leonbros-backend.vercel.app/v1/items/getItems?page=1")
+      fetch(`${url}/?page=1`)
         .then((res) => res.json())
         .then((res) => {
           setParts(res.data);

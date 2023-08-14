@@ -16,7 +16,10 @@ import Brakepads from './Pages/categories/brakepads';
 import Engineparts from './Pages/categories/engineparts';
 import Ignition from './Pages/categories/ignition';
 import Drive from './Pages/categories/drive';
-// import Pq from './test/Pq';
+
+import SignUp from './Pages/SignUp/signUp';
+import Login from './Pages/Login/login';
+
 
 
 function App() {
@@ -33,7 +36,9 @@ function App() {
         <Route path="/engineparts" element={<Engineparts/>}/>
         <Route path="/ignition" element={<Ignition/>}/>
         <Route path="/drive" element={<Drive/>}/>
-        {/* <Route path="/navbar" element={<Pq/>}/> */}
+        <Route path="/signup" element={<SignUp/>}/>
+        <Route path="/login" element={<Login/>}/>
+        
       </Routes>
     </BrowserRouter>
   );

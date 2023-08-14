@@ -9,7 +9,7 @@ import Item from "../../components/basic/item";
 
 
 function Engine() {
-
+  const engine_url = "https://leonbros-backend.vercel.app/v1/items/getItems/strutMount";
   const [data,setData] = useState([]);
   return (
     <div>
@@ -60,7 +60,7 @@ function Engine() {
         </div>
         <div className='line'></div>
 
-        <div><Catitems/></div> </>
+        <div><Catitems url = {engine_url}/></div> </>
           )
         }
         
